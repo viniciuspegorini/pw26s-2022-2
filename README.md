@@ -40,12 +40,12 @@ O conteúdo do projeto é uma introdução sobre os *frameworks* **Spring, Sprin
 - Struts2
 - GWT 
 - EXTJs 
-- Node.JS + Express -> Dotti
+- Node.JS + Express 
 - MEAN 
 - Vaadin  
 - *.Net 
-- Django -> Reinaldo
-- Rubi on Rails -> Ítalo
+- Django 
+- Rubi on Rails 
 - ZendFramework 
 - YiiFramework 
 - CakePHP
@@ -53,7 +53,7 @@ O conteúdo do projeto é uma introdução sobre os *frameworks* **Spring, Sprin
 - Grails 
 - Play 
 - Tapestry 
-- Flask -> Matheus
+- Flask 
 - Pyramid
 - Wicket
 - TurboGears
@@ -64,7 +64,7 @@ O conteúdo do projeto é uma introdução sobre os *frameworks* **Spring, Sprin
 - Bootfaces
 - Meteor 
 - React
-- React Native
+- React Native -> Lucas
 - Flutter
 - Go 
 
