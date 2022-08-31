@@ -33,6 +33,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
                 .antMatchers(HttpMethod.POST,"/users").permitAll()
 
+                .antMatchers(HttpMethod.GET,"/products/download/**").permitAll()
+
                 .anyRequest().authenticated()
             .and()
                 // Filters

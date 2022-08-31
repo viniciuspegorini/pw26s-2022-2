@@ -39,4 +39,11 @@ public class Product implements Serializable {
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
 
+    @Column(length = 10, name = "image_name")
+    private String imageName;
+
+    @Lob
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "image_file")
+    private byte[] imageFile;
 }

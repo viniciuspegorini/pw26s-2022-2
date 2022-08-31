@@ -9,6 +9,8 @@ create table product (
     description varchar(1024) not null,
     name varchar(100) not null,
     price double not null,
+    image_name varchar(10),
+    image_file blob,
     category_id bigint,
     primary key (id)
 );
