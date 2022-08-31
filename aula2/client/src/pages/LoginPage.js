@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonWithProgress from '../components/ButtonWithProgress';
 import Input from '../components/input';
+import { AuthContext } from '../context/AuthContext';
 import AuthService from '../services/auth.service';
 
 export const LoginPage = (props) => {
@@ -9,13 +10,19 @@ export const LoginPage = (props) => {
   const [password, setPassword] = useState('');
   const [apiError, setApiError] = useState();
   const [pendingApiCall, setPendingApiCall] = useState(false);
+  const { handleLogin } = useContext(AuthContext);
 
   useEffect(() =>{
     setApiError();
   }, [username, password]);
 
   const onClickLogin = () => {
-    setPendingApiCall(true);
+    const user = {
+      username,
+      password
+    };
+    handleLogin(user);
+    /*setPendingApiCall(true);
 
     const body = {
       username,
@@ -29,6 +36,7 @@ export const LoginPage = (props) => {
       setPendingApiCall(false);
       setApiError('Login failed');
     });
+    */
   }
 
 

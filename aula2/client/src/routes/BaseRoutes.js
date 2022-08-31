@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
 import AuthenticatedRoutes from './AuthenticatedRoutes';
 import SignRoutes from './SignRoutes';
 
 const BaseRoutes = () => {
-    const isAuthenticated = localStorage.getItem('token');
-    return isAuthenticated ? <AuthenticatedRoutes /> : <SignRoutes />;
+    const { authenticated } = useContext(AuthContext);
+
+    return authenticated ? <AuthenticatedRoutes /> : <SignRoutes />;
 }
 
 export default BaseRoutes;

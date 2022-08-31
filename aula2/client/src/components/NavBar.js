@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/utfpr-logo.png";
+import { AuthContext } from '../context/AuthContext';
 import AuthService from "../services/auth.service";
 
 const NavBar = (props) => {
-
-  const onClickLogout = () => {
-    AuthService.logout();
-    window.location.reload();
-  };
-
+  const { handleLogout } = useContext(AuthContext);
+c
   return (
     <div className="bg-white shadow-sm mb-2">
       <div className="container">
@@ -52,7 +49,7 @@ const NavBar = (props) => {
             </li>
             
             <li className="nav-item">
-              <button className="btn btn-light" onClick={onClickLogout}>
+              <button className="btn btn-light" onClick={handleLogout}>
                 &times; Sair
               </button>
             </li>
