@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  server:
+    image: server
+    container_name: server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./upload:/opt/uploads
+    restart: always
+    networks:
+      - server
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    environment:
+      MINIO_ROOT_USER: "minioadmin"
+      MINIO_ROOT_PASSWORD: "minioadmin"
+    volumes:
+      - ./data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    restart: always
+    command: server /data --console-address :9001
+    networks:
+      - server
+
+networks:
+  server:
+    name: app
+    driver: bridge
