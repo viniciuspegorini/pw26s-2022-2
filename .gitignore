@@ -11,6 +11,10 @@
 **/lib/
 **/node_modules/
 
+#Databases 
+**/server/postgres-data/
+**/server/data/
+
 # dependencies
 /node_modules
 
