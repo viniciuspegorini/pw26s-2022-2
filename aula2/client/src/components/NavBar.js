@@ -6,7 +6,8 @@ import AuthService from "../services/auth.service";
 
 const NavBar = (props) => {
   const { handleLogout } = useContext(AuthContext);
-c
+
+  
   return (
     <div className="bg-white shadow-sm mb-2">
       <div className="container">

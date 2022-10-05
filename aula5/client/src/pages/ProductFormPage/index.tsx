@@ -116,6 +116,7 @@ export function ProductFormPage() {
         setPendingApiCall(false);
         navigate("/products");
       })
+      
       .catch((error) => {
         if (error.response.data && error.response.data.validationErrors) {
           setErrors(error.response.data.validationErrors);
