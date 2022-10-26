@@ -14,11 +14,14 @@ import javax.validation.Valid;
 @CrossOrigin("http://localhost:3001")
 @RestController
 @RequestMapping("users")
-@Slf4j()
+@Slf4j
 public class UserController {
 
-    @Autowired
-    UserService userService;
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @PostMapping
     GenericResponse createUser(@Valid @RequestBody User user) {
