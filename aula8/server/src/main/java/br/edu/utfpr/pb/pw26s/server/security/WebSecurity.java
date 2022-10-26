@@ -67,15 +67,11 @@ public class WebSecurity {
             .and()
             .cors().and()
             .authorizeRequests()
-                .antMatchers(HttpMethod.POST,"/users").permitAll()
+                /*.antMatchers(HttpMethod.POST,"/users").permitAll()
                 .antMatchers( "/oauth2/**", "/auth/**").permitAll()
                 .antMatchers("/h2-console/**",
-                        "/swagger-resources/**",
-                        "/swagger-ui.html",
-                        "/swagger-ui/**",
-                        "/v2/api-docs",
-                        "/webjars/**").permitAll()
-                .anyRequest().authenticated()
+                        "/actuator/**").permitAll()*/
+                .anyRequest().permitAll()
                 .and()
 
             .oauth2Login()

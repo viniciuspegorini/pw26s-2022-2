@@ -1,0 +1,439 @@
+2022-10-26 16:35:04.387  INFO 7924 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 7924 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 16:35:04.388  INFO 7924 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 16:35:04.426  INFO 7924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 16:35:04.426  INFO 7924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 16:35:05.226  INFO 7924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 16:35:05.275  INFO 7924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2022-10-26 16:35:05.866  INFO 7924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 16:35:05.872  INFO 7924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 16:35:05.872  INFO 7924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 16:35:05.964  INFO 7924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 16:35:05.964  INFO 7924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1537 ms
+2022-10-26 16:35:06.054  INFO 7924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 16:35:06.150  INFO 7924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 16:35:06.159  INFO 7924 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 16:35:06.221  INFO 7924 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:35:06.221  INFO 7924 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:35:06.255  INFO 7924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 16:35:06.287  INFO 7924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 16:35:06.372  INFO 7924 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 16:35:06.443  INFO 7924 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 16:35:06.782  INFO 7924 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 16:35:06.788  INFO 7924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 16:35:07.403  WARN 7924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 16:35:07.633  INFO 7924 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 16:35:07.660  INFO 7924 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@686c0a27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ba2cd47, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b39336, org.springframework.security.web.header.HeaderWriterFilter@57168bcd, org.springframework.web.filter.CorsFilter@4a126acf, org.springframework.security.web.authentication.logout.LogoutFilter@2a15fa29, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@133f43e0, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@31089b8d, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@2725e7fd, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@2f90fc0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63a9b293, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2972cce6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6295c44c, org.springframework.security.web.session.SessionManagementFilter@155022e7, org.springframework.security.web.access.ExceptionTranslationFilter@2067cfe1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4846a496]
+2022-10-26 16:35:07.842  INFO 7924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 16:35:07.842  INFO 7924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 16:35:07.842  INFO 7924 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 16:35:07.852  INFO 7924 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 16:35:07.875  WARN 7924 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 16:35:07.894  INFO 7924 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.010s)
+2022-10-26 16:35:07.897  INFO 7924 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 16:35:07.918  INFO 7924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 16:35:07.923  INFO 7924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 16:35:07.940  INFO 7924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 16:35:07.945  INFO 7924 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.028s)
+2022-10-26 16:35:08.023  INFO 7924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 16:35:08.058  INFO 7924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 16:35:08.072  INFO 7924 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.049 seconds (JVM running for 5.065)
+2022-10-26 16:35:08.978  INFO 7924 --- [RMI TCP Connection(3)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 16:35:08.980  INFO 7924 --- [RMI TCP Connection(3)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 16:35:08.981  INFO 7924 --- [RMI TCP Connection(3)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-26 16:35:30.520  INFO 7924 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":0}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-10-26 16:36:10.733  INFO 7924 --- [http-nio-8080-exec-7] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 16:36:10.733  INFO 7924 --- [http-nio-8080-exec-7] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 16:36:10.733  INFO 7924 --- [http-nio-8080-exec-7] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 16:36:10.738  WARN 7924 --- [http-nio-8080-exec-7] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 16:38:49.231 ERROR 7924 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1173) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1486) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:180) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-10-26 16:38:49.322  WARN 7924 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 16:38:49.326  INFO 7924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 16:38:49.330  INFO 7924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 16:38:49.492  INFO 7924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 16:38:54.986  INFO 30456 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 30456 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 16:38:54.987  INFO 30456 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 16:38:55.021  INFO 30456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 16:38:55.021  INFO 30456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 16:38:55.857  INFO 30456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 16:38:55.908  INFO 30456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2022-10-26 16:38:56.456  INFO 30456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 16:38:56.463  INFO 30456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 16:38:56.463  INFO 30456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 16:38:56.556  INFO 30456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 16:38:56.556  INFO 30456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2022-10-26 16:38:56.650  INFO 30456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 16:38:56.754  INFO 30456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 16:38:56.762  INFO 30456 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 16:38:56.823  INFO 30456 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:38:56.823  INFO 30456 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:38:56.859  INFO 30456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 16:38:56.891  INFO 30456 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 16:38:56.987  INFO 30456 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 16:38:57.057  INFO 30456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 16:38:57.415  INFO 30456 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 16:38:57.421  INFO 30456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 16:38:58.095  WARN 30456 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 16:38:58.324  INFO 30456 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 16:38:58.350  INFO 30456 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36b314c2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16d4ac92, org.springframework.security.web.context.SecurityContextPersistenceFilter@339bbf4e, org.springframework.security.web.header.HeaderWriterFilter@50289fca, org.springframework.web.filter.CorsFilter@51e8c12e, org.springframework.security.web.authentication.logout.LogoutFilter@541e460e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6e85aa5e, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1d7cceab, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@7933931c, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@57889dfc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c3d3e2e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c67ef55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@648b1ba3, org.springframework.security.web.session.SessionManagementFilter@2e38a548, org.springframework.security.web.access.ExceptionTranslationFilter@92f8245, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40f6a0a6]
+2022-10-26 16:38:58.535  INFO 30456 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 16:38:58.535  INFO 30456 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 16:38:58.535  INFO 30456 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 16:38:58.546  INFO 30456 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 16:38:58.569  WARN 30456 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 16:38:58.587  INFO 30456 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.009s)
+2022-10-26 16:38:58.593  INFO 30456 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 16:38:58.614  INFO 30456 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 16:38:58.617  INFO 30456 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 16:38:58.634  INFO 30456 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 16:38:58.640  INFO 30456 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.028s)
+2022-10-26 16:38:58.720  INFO 30456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 16:38:58.755  INFO 30456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 16:38:58.770  INFO 30456 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.246 seconds (JVM running for 5.452)
+2022-10-26 16:38:59.151  INFO 30456 --- [RMI TCP Connection(2)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 16:38:59.153  INFO 30456 --- [RMI TCP Connection(2)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 16:38:59.153  INFO 30456 --- [RMI TCP Connection(2)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-26 16:39:06.940  INFO 30456 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":0}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-10-26 16:39:38.269  INFO 30456 --- [http-nio-8080-exec-9] b.e.u.p.p.s.controller.UserController    : Creating new user: username
+2022-10-26 16:39:38.386  INFO 30456 --- [http-nio-8080-exec-9] b.e.u.p.p.s.controller.UserController    : New user created: 3
+2022-10-26 16:42:29.006  WARN 30456 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 16:42:29.010  INFO 30456 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 16:42:29.013  INFO 30456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 16:42:29.053  INFO 30456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 16:42:36.586  INFO 21520 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 21520 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 16:42:36.587  INFO 21520 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 16:42:36.623  INFO 21520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 16:42:36.624  INFO 21520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 16:42:37.674  INFO 21520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 16:42:37.721  INFO 21520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2022-10-26 16:42:38.311  INFO 21520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 16:42:38.316  INFO 21520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 16:42:38.317  INFO 21520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 16:42:38.424  INFO 21520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 16:42:38.425  INFO 21520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1801 ms
+2022-10-26 16:42:38.509  INFO 21520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 16:42:38.594  INFO 21520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 16:42:38.603  INFO 21520 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 16:42:38.662  INFO 21520 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:42:38.663  INFO 21520 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 16:42:38.698  INFO 21520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 16:42:38.729  INFO 21520 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 16:42:38.815  INFO 21520 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 16:42:38.884  INFO 21520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 16:42:39.226  INFO 21520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 16:42:39.233  INFO 21520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 16:42:39.869  WARN 21520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 16:42:40.103  INFO 21520 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 16:42:40.133  INFO 21520 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d1b014a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57277c6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@883c2cd, org.springframework.security.web.header.HeaderWriterFilter@1eda59b7, org.springframework.web.filter.CorsFilter@3961592e, org.springframework.security.web.authentication.logout.LogoutFilter@17161d0d, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3d3cc848, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3ab8bf7a, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@4923e76c, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@5ca7be53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b7cabe3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bcfa07d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@300f75ac, org.springframework.security.web.session.SessionManagementFilter@3f47e956, org.springframework.security.web.access.ExceptionTranslationFilter@1e079308, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@409e55bb]
+2022-10-26 16:42:40.325  INFO 21520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 16:42:40.325  INFO 21520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 16:42:40.325  INFO 21520 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 16:42:40.334  INFO 21520 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 16:42:40.356  WARN 21520 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 16:42:40.380  INFO 21520 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.016s)
+2022-10-26 16:42:40.385  INFO 21520 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 16:42:40.405  INFO 21520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 16:42:40.409  INFO 21520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 16:42:40.425  INFO 21520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 16:42:40.430  INFO 21520 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.027s)
+2022-10-26 16:42:40.503  INFO 21520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 16:42:40.535  INFO 21520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 16:42:40.550  INFO 21520 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.385 seconds (JVM running for 5.704)
+2022-10-26 16:42:41.186  INFO 21520 --- [RMI TCP Connection(2)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 16:42:41.187  INFO 21520 --- [RMI TCP Connection(2)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 16:42:41.189  INFO 21520 --- [RMI TCP Connection(2)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-26 16:42:49.066  INFO 21520 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":0}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-10-26 16:43:08.179 ERROR 21520 --- [http-nio-8080-exec-7] b.e.u.p.p.s.e.ExceptionHandlerAdvice     : Error executing POST in /users.
+2022-10-26 16:43:08.188  WARN 21520 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in br.edu.utfpr.pb.pw26s.server.shared.GenericResponse br.edu.utfpr.pb.pw26s.server.controller.UserController.createUser(br.edu.utfpr.pb.pw26s.server.model.User): [Field error in object 'user' on field 'password': rejected value [assword]; codes [Pattern.user.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],[Ljavax.validation.constraints.Pattern$Flag;@546df607,^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$]; default message [must match "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$"]] ]
+2022-10-26 17:12:16.082 ERROR 21520 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1658) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:184) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-10-26 17:12:16.277  WARN 21520 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 17:12:16.281  INFO 21520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:12:16.285  INFO 21520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 17:12:16.339  INFO 21520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 17:12:24.194  INFO 29444 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 29444 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 17:12:24.195  INFO 29444 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 17:12:24.230  INFO 29444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 17:12:24.230  INFO 29444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 17:12:25.146  INFO 29444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 17:12:25.193  INFO 29444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2022-10-26 17:12:25.716  INFO 29444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 17:12:25.723  INFO 29444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 17:12:25.723  INFO 29444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 17:12:25.827  INFO 29444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 17:12:25.827  INFO 29444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1597 ms
+2022-10-26 17:12:25.911  INFO 29444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 17:12:25.996  INFO 29444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 17:12:26.004  INFO 29444 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 17:12:26.063  INFO 29444 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.001 seconds
+2022-10-26 17:12:26.064  INFO 29444 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:12:26.099  INFO 29444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 17:12:26.128  INFO 29444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 17:12:26.235  INFO 29444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 17:12:26.307  INFO 29444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 17:12:26.648  INFO 29444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 17:12:26.654  INFO 29444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:12:27.262  WARN 29444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 17:12:27.480  INFO 29444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 17:12:27.506  INFO 29444 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c71e0e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15dd670b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4efb46cd, org.springframework.security.web.header.HeaderWriterFilter@7fa7f24f, org.springframework.web.filter.CorsFilter@2d1616e2, org.springframework.security.web.authentication.logout.LogoutFilter@58d5144e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@790b1d6b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@422a2bd6, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@39d8a8b0, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@56e6eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@501d6cc7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1588d873, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e4d3cd5, org.springframework.security.web.session.SessionManagementFilter@6e4b1b84, org.springframework.security.web.access.ExceptionTranslationFilter@24ac721e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2143e928]
+2022-10-26 17:12:27.718  INFO 29444 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 17:12:27.718  INFO 29444 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 17:12:27.718  INFO 29444 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 17:12:27.728  INFO 29444 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 17:12:27.752  WARN 29444 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 17:12:27.773  INFO 29444 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.011s)
+2022-10-26 17:12:27.777  INFO 29444 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 17:12:27.797  INFO 29444 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 17:12:27.801  INFO 29444 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 17:12:27.819  INFO 29444 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 17:12:27.824  INFO 29444 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.028s)
+2022-10-26 17:12:27.870  INFO 29444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 17:12:27.902  INFO 29444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 17:12:27.915  INFO 29444 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.069 seconds (JVM running for 5.109)
+2022-10-26 17:12:28.798  INFO 29444 --- [RMI TCP Connection(3)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:12:28.799  INFO 29444 --- [RMI TCP Connection(3)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:12:28.801  INFO 29444 --- [RMI TCP Connection(3)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-26 17:14:23.662 ERROR 29444 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1173) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1486) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:180) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-10-26 17:14:23.752  WARN 29444 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 17:14:23.756  INFO 29444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:14:23.759  INFO 29444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 17:14:23.923  INFO 29444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 17:14:29.267  INFO 32872 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 32872 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 17:14:29.268  INFO 32872 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 17:14:29.305  INFO 32872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 17:14:29.305  INFO 32872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 17:14:30.100  INFO 32872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 17:14:30.151  INFO 32872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2022-10-26 17:14:30.678  INFO 32872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 17:14:30.684  INFO 32872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 17:14:30.685  INFO 32872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 17:14:30.789  INFO 32872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 17:14:30.789  INFO 32872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2022-10-26 17:14:30.878  INFO 32872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 17:14:30.973  INFO 32872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 17:14:30.982  INFO 32872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 17:14:31.052  INFO 32872 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:14:31.053  INFO 32872 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:14:31.093  INFO 32872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 17:14:31.125  INFO 32872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 17:14:31.220  INFO 32872 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 17:14:31.294  INFO 32872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 17:14:31.640  INFO 32872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 17:14:31.646  INFO 32872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:14:32.241  WARN 32872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 17:14:32.458  INFO 32872 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 17:14:32.483  INFO 32872 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13f34b66, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7072f34, org.springframework.security.web.context.SecurityContextPersistenceFilter@551faf1a, org.springframework.security.web.header.HeaderWriterFilter@54b90c06, org.springframework.web.filter.CorsFilter@62faa88e, org.springframework.security.web.authentication.logout.LogoutFilter@8437e6c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@73633f5a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@609a4c78, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@6edeec14, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@677f32d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@da9106b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34d400de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59bfcf86, org.springframework.security.web.session.SessionManagementFilter@245ec9c0, org.springframework.security.web.access.ExceptionTranslationFilter@11469f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75954ed]
+2022-10-26 17:14:32.685  INFO 32872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 17:14:32.685  INFO 32872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 17:14:32.685  INFO 32872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 17:14:32.695  INFO 32872 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 17:14:32.716  WARN 32872 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 17:14:32.734  INFO 32872 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.009s)
+2022-10-26 17:14:32.738  INFO 32872 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 17:14:32.759  INFO 32872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 17:14:32.763  INFO 32872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 17:14:32.778  INFO 32872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 17:14:32.785  INFO 32872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.027s)
+2022-10-26 17:14:32.830  INFO 32872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 17:14:32.864  INFO 32872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 17:14:32.877  INFO 32872 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.004 seconds (JVM running for 5.144)
+2022-10-26 17:14:33.528  INFO 32872 --- [RMI TCP Connection(1)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:14:33.529  INFO 32872 --- [RMI TCP Connection(1)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:14:33.531  INFO 32872 --- [RMI TCP Connection(1)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-26 17:17:58.691 ERROR 32872 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1658) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:184) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-10-26 17:17:58.895  WARN 32872 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 17:17:58.900  INFO 32872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:17:58.904  INFO 32872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 17:17:58.943  INFO 32872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 17:18:04.184  INFO 22824 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 22824 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 17:18:04.185  INFO 22824 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 17:18:04.223  INFO 22824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 17:18:04.223  INFO 22824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 17:18:05.211  INFO 22824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 17:18:05.272  INFO 22824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2022-10-26 17:18:05.854  INFO 22824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 17:18:05.860  INFO 22824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 17:18:05.860  INFO 22824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 17:18:05.947  INFO 22824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 17:18:05.948  INFO 22824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1725 ms
+2022-10-26 17:18:06.049  INFO 22824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 17:18:06.145  INFO 22824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 17:18:06.154  INFO 22824 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 17:18:06.225  INFO 22824 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.001 seconds
+2022-10-26 17:18:06.225  INFO 22824 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:18:06.278  INFO 22824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 17:18:06.311  INFO 22824 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 17:18:06.408  INFO 22824 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 17:18:06.485  INFO 22824 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 17:18:06.863  INFO 22824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 17:18:06.870  INFO 22824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:18:07.507  WARN 22824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 17:18:07.754  INFO 22824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 17:18:07.783  INFO 22824 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53b77a6a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@137e8cd3, org.springframework.security.web.context.SecurityContextPersistenceFilter@51c1b708, org.springframework.security.web.header.HeaderWriterFilter@4ea936dd, org.springframework.web.filter.CorsFilter@5eacd883, org.springframework.security.web.authentication.logout.LogoutFilter@588e0831, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@e6437f7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7415824a, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@35454073, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@5dc9089b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8830420, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c340b1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ab61fe5, org.springframework.security.web.session.SessionManagementFilter@2c840843, org.springframework.security.web.access.ExceptionTranslationFilter@17e93483, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e194a08]
+2022-10-26 17:18:08.004  INFO 22824 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 17:18:08.005  INFO 22824 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 17:18:08.005  INFO 22824 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 17:18:08.015  INFO 22824 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 17:18:08.039  WARN 22824 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 17:18:08.065  INFO 22824 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.017s)
+2022-10-26 17:18:08.070  INFO 22824 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 17:18:08.091  INFO 22824 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 17:18:08.096  INFO 22824 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 17:18:08.113  INFO 22824 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 17:18:08.120  INFO 22824 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.030s)
+2022-10-26 17:18:08.170  INFO 22824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 17:18:08.205  INFO 22824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 17:18:08.221  INFO 22824 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.46 seconds (JVM running for 5.867)
+2022-10-26 17:18:08.782  INFO 22824 --- [RMI TCP Connection(1)-172.20.190.208] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:18:08.783  INFO 22824 --- [RMI TCP Connection(1)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:18:08.785  INFO 22824 --- [RMI TCP Connection(1)-172.20.190.208] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-26 17:18:26.263  WARN 22824 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-10-26 17:18:26.268  INFO 22824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:18:26.272  INFO 22824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-26 17:18:26.311  INFO 22824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-26 17:18:29.668  INFO 31380 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 11.0.12 on DESKTOP-PUU3LHI with PID 31380 (D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-temp\pw26s-2022-2\aula8\server)
+2022-10-26 17:18:29.670  INFO 31380 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2022-10-26 17:18:29.703  INFO 31380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-26 17:18:29.703  INFO 31380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-26 17:18:30.540  INFO 31380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-26 17:18:30.592  INFO 31380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2022-10-26 17:18:31.167  INFO 31380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-26 17:18:31.174  INFO 31380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-26 17:18:31.174  INFO 31380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-26 17:18:31.293  INFO 31380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-26 17:18:31.293  INFO 31380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1589 ms
+2022-10-26 17:18:31.391  INFO 31380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-26 17:18:31.480  INFO 31380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-26 17:18:31.489  INFO 31380 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2022-10-26 17:18:31.554  INFO 31380 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:18:31.555  INFO 31380 --- [restartedMain] o.s.j.support.DatabaseStartupValidator   : Database startup detected after 0.0 seconds
+2022-10-26 17:18:31.595  INFO 31380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-26 17:18:31.627  INFO 31380 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-26 17:18:31.733  INFO 31380 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-26 17:18:31.804  INFO 31380 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-26 17:18:32.162  INFO 31380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-26 17:18:32.168  INFO 31380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 17:18:32.813  WARN 31380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-26 17:18:33.067  INFO 31380 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-10-26 17:18:33.095  INFO 31380 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45f4fcb2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73f3234c, org.springframework.security.web.context.SecurityContextPersistenceFilter@47664cf0, org.springframework.security.web.header.HeaderWriterFilter@7f43ac9d, org.springframework.web.filter.CorsFilter@72b4931c, org.springframework.security.web.authentication.logout.LogoutFilter@63dc2589, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@78a9735b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@100b34e7, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@17763a17, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@75054527, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1442b2b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54618088, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f06e188, org.springframework.security.web.session.SessionManagementFilter@c1ac609, org.springframework.security.web.access.ExceptionTranslationFilter@1c81a669, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ac8b666]
+2022-10-26 17:18:33.473  INFO 31380 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 17:18:33.474  INFO 31380 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 17:18:33.474  INFO 31380 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 17:18:33.488  INFO 31380 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2022-10-26 17:18:33.513  WARN 31380 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-26 17:18:33.534  INFO 31380 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.011s)
+2022-10-26 17:18:33.539  INFO 31380 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-10-26 17:18:33.563  INFO 31380 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-10-26 17:18:33.568  INFO 31380 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2022-10-26 17:18:33.587  INFO 31380 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2022-10-26 17:18:33.593  INFO 31380 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.031s)
+2022-10-26 17:18:33.646  INFO 31380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-26 17:18:33.691  INFO 31380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-26 17:18:33.708  INFO 31380 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 4.427 seconds (JVM running for 5.517)
+2022-10-26 17:18:34.050  INFO 31380 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2022-10-26 17:18:34.131  INFO 31380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:18:34.131  INFO 31380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:18:34.133  INFO 31380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-26 17:19:29.410  INFO 31380 --- [http-nio-8080-exec-9] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-10-26 17:19:29.411  INFO 31380 --- [http-nio-8080-exec-9] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-26 17:19:29.411  INFO 31380 --- [http-nio-8080-exec-9] o.f.c.internal.license.VersionPrinter    : 
+2022-10-26 17:19:29.414  WARN 31380 --- [http-nio-8080-exec-9] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.

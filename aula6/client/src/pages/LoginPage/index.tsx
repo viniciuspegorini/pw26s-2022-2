@@ -14,7 +14,7 @@ export function LoginPage() {
   const { handleLogin, handleLoginSocial, loading } = useContext(AuthContext);
 
   const onSuccess = (response: CredentialResponse) => {
-    console.log(response.credential);
+    console.log(response);
 
     if (response.credential) {
       handleLoginSocial(response.credential);
