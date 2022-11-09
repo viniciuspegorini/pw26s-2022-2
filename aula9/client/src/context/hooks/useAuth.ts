@@ -33,10 +33,10 @@ export function useAuth() {
       api.defaults.headers.common[
         "Authorization"
       ] = `Bearer ${response.data.token}`;
-      
+
       console.log(response.data.user);
       setAuthenticatedUser(response.data.user);
-      
+
       setAuthenticated(true);
       console.log("Passou");
       history.push("/home");
@@ -71,12 +71,29 @@ export function useAuth() {
 
   function handleLogin(response: AuthenticationResponse) {
     localStorage.setItem("token", JSON.stringify(response.token));
+    localStorage.setItem("user", JSON.stringify(response.user));
+    api.defaults.headers.common[
+      "Authorization"
+    ] = `Bearer ${response.token}`;
+    console.log(response.user);
+    setAuthenticatedUser(response.user);
+    setAuthenticated(true);
+  }
+
+  function checkIsAuthenticated() {
+    if (localStorage.getItem("token") && localStorage.getItem("user")) {
+      const token = JSON.parse(localStorage.getItem("token") || '{}');
+      const user = JSON.parse(localStorage.getItem("user") || '{}');
+
       api.defaults.headers.common[
         "Authorization"
-      ] = `Bearer ${response.token}`;
-      console.log(response.user);
-      setAuthenticatedUser(response.user);
+      ] = `Bearer ${token}`;
+      api.defaults.headers.common[
+        "Authorization"
+      ] = `Bearer ${token}`;
+      setAuthenticatedUser(user);
       setAuthenticated(true);
+    }
   }
 
   return {
@@ -86,5 +103,6 @@ export function useAuth() {
     handleLogin,
     handleLoginSocial,
     handleLogout,
+    checkIsAuthenticated
   };
 }

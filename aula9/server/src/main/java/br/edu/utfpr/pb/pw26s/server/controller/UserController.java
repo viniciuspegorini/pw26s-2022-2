@@ -24,7 +24,7 @@ public class UserController {
     @PostMapping
     GenericResponse createUser(@Valid @RequestBody User user) {
         userService.save(user);
-        return new GenericResponse("Registro salvo.1");
+        return new GenericResponse("Registro salvo.");
     }
 
 }

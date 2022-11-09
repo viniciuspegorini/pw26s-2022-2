@@ -53,7 +53,7 @@ public class WebSecurity {
                 .antMatchers( "/error/**").permitAll()
                 .antMatchers( "/auth/**").permitAll()
                 .antMatchers( "/categories/**").hasAnyRole("USER", "ADMIN")
-                .antMatchers( "/products/**").hasAnyRole("USER", "ADMIN")
+                .antMatchers( "/products/**").hasAnyRole("ADMIN")
 
                 .antMatchers("/h2-console/**",
                         "/swagger-resources/**",
